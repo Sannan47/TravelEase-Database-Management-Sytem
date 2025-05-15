@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Report2Data" targetNamespace="http://tempuri.org/Report2Data.xsd" xmlns:mstns="http://tempuri.org/Report2Data.xsd" xmlns="http://tempuri.org/Report2Data.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TravelEaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TravelEaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.TravelEaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AgeDistruibutionTableAdapter" GeneratorDataComponentClassName="AgeDistruibutionTableAdapter" Name="AgeDistruibution" UserDataComponentName="AgeDistruibutionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.AgeDistruibution" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AgeGroup, TravelerCount FROM dbo.AgeDistruibution</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AgeGroup" DataSetColumn="AgeGroup" />
+              <Mapping SourceColumn="TravelerCount" DataSetColumn="TravelerCount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AverageSpendingPerTravelerTableAdapter" GeneratorDataComponentClassName="AverageSpendingPerTravelerTableAdapter" Name="AverageSpendingPerTraveler" UserDataComponentName="AverageSpendingPerTravelerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.AverageSpendingPerTraveler" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AvgSpendingPerTraveler FROM dbo.AverageSpendingPerTraveler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AvgSpendingPerTraveler" DataSetColumn="AvgSpendingPerTraveler" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MostBookedCategoriesTableAdapter" GeneratorDataComponentClassName="MostBookedCategoriesTableAdapter" Name="MostBookedCategories" UserDataComponentName="MostBookedCategoriesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.MostBookedCategories" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Category, BookingCount FROM dbo.MostBookedCategories</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="BookingCount" DataSetColumn="BookingCount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NationalityDistruibutionTableAdapter" GeneratorDataComponentClassName="NationalityDistruibutionTableAdapter" Name="NationalityDistruibution" UserDataComponentName="NationalityDistruibutionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.NationalityDistruibution" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nationality, TravelerCount FROM dbo.NationalityDistruibution</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nationality" DataSetColumn="Nationality" />
+              <Mapping SourceColumn="TravelerCount" DataSetColumn="TravelerCount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SpendingByNationalityTableAdapter" GeneratorDataComponentClassName="SpendingByNationalityTableAdapter" Name="SpendingByNationality" UserDataComponentName="SpendingByNationalityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.SpendingByNationality" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nationality, AvgSpend FROM dbo.SpendingByNationality</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nationality" DataSetColumn="Nationality" />
+              <Mapping SourceColumn="AvgSpend" DataSetColumn="AvgSpend" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Report2Data" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Report2Data" msprop:Generator_DataSetName="Report2Data">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AgeDistruibution" msprop:Generator_RowEvHandlerName="AgeDistruibutionRowChangeEventHandler" msprop:Generator_RowDeletedName="AgeDistruibutionRowDeleted" msprop:Generator_RowDeletingName="AgeDistruibutionRowDeleting" msprop:Generator_RowEvArgName="AgeDistruibutionRowChangeEvent" msprop:Generator_TablePropName="AgeDistruibution" msprop:Generator_RowChangedName="AgeDistruibutionRowChanged" msprop:Generator_RowChangingName="AgeDistruibutionRowChanging" msprop:Generator_TableClassName="AgeDistruibutionDataTable" msprop:Generator_RowClassName="AgeDistruibutionRow" msprop:Generator_TableVarName="tableAgeDistruibution" msprop:Generator_UserTableName="AgeDistruibution">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AgeGroup" msprop:Generator_ColumnPropNameInRow="AgeGroup" msprop:Generator_ColumnPropNameInTable="AgeGroupColumn" msprop:Generator_ColumnVarNameInTable="columnAgeGroup" msprop:Generator_UserColumnName="AgeGroup" type="xs:int" minOccurs="0" />
+              <xs:element name="TravelerCount" msprop:Generator_ColumnPropNameInRow="TravelerCount" msprop:Generator_ColumnPropNameInTable="TravelerCountColumn" msprop:Generator_ColumnVarNameInTable="columnTravelerCount" msprop:Generator_UserColumnName="TravelerCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AverageSpendingPerTraveler" msprop:Generator_RowEvHandlerName="AverageSpendingPerTravelerRowChangeEventHandler" msprop:Generator_RowDeletedName="AverageSpendingPerTravelerRowDeleted" msprop:Generator_RowDeletingName="AverageSpendingPerTravelerRowDeleting" msprop:Generator_RowEvArgName="AverageSpendingPerTravelerRowChangeEvent" msprop:Generator_TablePropName="AverageSpendingPerTraveler" msprop:Generator_RowChangedName="AverageSpendingPerTravelerRowChanged" msprop:Generator_RowChangingName="AverageSpendingPerTravelerRowChanging" msprop:Generator_TableClassName="AverageSpendingPerTravelerDataTable" msprop:Generator_RowClassName="AverageSpendingPerTravelerRow" msprop:Generator_TableVarName="tableAverageSpendingPerTraveler" msprop:Generator_UserTableName="AverageSpendingPerTraveler">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AvgSpendingPerTraveler" msprop:Generator_ColumnPropNameInRow="AvgSpendingPerTraveler" msprop:Generator_ColumnPropNameInTable="AvgSpendingPerTravelerColumn" msprop:Generator_ColumnVarNameInTable="columnAvgSpendingPerTraveler" msprop:Generator_UserColumnName="AvgSpendingPerTraveler" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MostBookedCategories" msprop:Generator_RowEvHandlerName="MostBookedCategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="MostBookedCategoriesRowDeleted" msprop:Generator_RowDeletingName="MostBookedCategoriesRowDeleting" msprop:Generator_RowEvArgName="MostBookedCategoriesRowChangeEvent" msprop:Generator_TablePropName="MostBookedCategories" msprop:Generator_RowChangedName="MostBookedCategoriesRowChanged" msprop:Generator_RowChangingName="MostBookedCategoriesRowChanging" msprop:Generator_TableClassName="MostBookedCategoriesDataTable" msprop:Generator_RowClassName="MostBookedCategoriesRow" msprop:Generator_TableVarName="tableMostBookedCategories" msprop:Generator_UserTableName="MostBookedCategories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_UserColumnName="Category">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BookingCount" msprop:Generator_ColumnPropNameInRow="BookingCount" msprop:Generator_ColumnPropNameInTable="BookingCountColumn" msprop:Generator_ColumnVarNameInTable="columnBookingCount" msprop:Generator_UserColumnName="BookingCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NationalityDistruibution" msprop:Generator_RowEvHandlerName="NationalityDistruibutionRowChangeEventHandler" msprop:Generator_RowDeletedName="NationalityDistruibutionRowDeleted" msprop:Generator_RowDeletingName="NationalityDistruibutionRowDeleting" msprop:Generator_RowEvArgName="NationalityDistruibutionRowChangeEvent" msprop:Generator_TablePropName="NationalityDistruibution" msprop:Generator_RowChangedName="NationalityDistruibutionRowChanged" msprop:Generator_RowChangingName="NationalityDistruibutionRowChanging" msprop:Generator_TableClassName="NationalityDistruibutionDataTable" msprop:Generator_RowClassName="NationalityDistruibutionRow" msprop:Generator_TableVarName="tableNationalityDistruibution" msprop:Generator_UserTableName="NationalityDistruibution">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nationality" msprop:Generator_ColumnPropNameInRow="Nationality" msprop:Generator_ColumnPropNameInTable="NationalityColumn" msprop:Generator_ColumnVarNameInTable="columnNationality" msprop:Generator_UserColumnName="Nationality">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TravelerCount" msprop:Generator_ColumnPropNameInRow="TravelerCount" msprop:Generator_ColumnPropNameInTable="TravelerCountColumn" msprop:Generator_ColumnVarNameInTable="columnTravelerCount" msprop:Generator_UserColumnName="TravelerCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SpendingByNationality" msprop:Generator_RowEvHandlerName="SpendingByNationalityRowChangeEventHandler" msprop:Generator_RowDeletedName="SpendingByNationalityRowDeleted" msprop:Generator_RowDeletingName="SpendingByNationalityRowDeleting" msprop:Generator_RowEvArgName="SpendingByNationalityRowChangeEvent" msprop:Generator_TablePropName="SpendingByNationality" msprop:Generator_RowChangedName="SpendingByNationalityRowChanged" msprop:Generator_RowChangingName="SpendingByNationalityRowChanging" msprop:Generator_TableClassName="SpendingByNationalityDataTable" msprop:Generator_RowClassName="SpendingByNationalityRow" msprop:Generator_TableVarName="tableSpendingByNationality" msprop:Generator_UserTableName="SpendingByNationality">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nationality" msprop:Generator_ColumnPropNameInRow="Nationality" msprop:Generator_ColumnPropNameInTable="NationalityColumn" msprop:Generator_ColumnVarNameInTable="columnNationality" msprop:Generator_UserColumnName="Nationality">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AvgSpend" msprop:Generator_ColumnPropNameInRow="AvgSpend" msprop:Generator_ColumnPropNameInTable="AvgSpendColumn" msprop:Generator_ColumnVarNameInTable="columnAvgSpend" msprop:Generator_UserColumnName="AvgSpend" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

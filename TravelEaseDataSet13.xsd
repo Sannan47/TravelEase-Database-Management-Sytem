@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TravelEaseDataSet13" targetNamespace="http://tempuri.org/TravelEaseDataSet13.xsd" xmlns:mstns="http://tempuri.org/TravelEaseDataSet13.xsd" xmlns="http://tempuri.org/TravelEaseDataSet13.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TravelEaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TravelEaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.TravelEaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DigitalTravelPassTableAdapter" GeneratorDataComponentClassName="DigitalTravelPassTableAdapter" Name="DigitalTravelPass" UserDataComponentName="DigitalTravelPassTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.DigitalTravelPass" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TravelerID, BookingID, Title, Destination, StartDate, EndDate, DayNumber, ItineraryDesc, Activity, HotelName, RoomType, CheckInDate, CheckOutDate, Inclusion FROM dbo.DigitalTravelPass</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TravelerID" DataSetColumn="TravelerID" />
+              <Mapping SourceColumn="BookingID" DataSetColumn="BookingID" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="Destination" DataSetColumn="Destination" />
+              <Mapping SourceColumn="StartDate" DataSetColumn="StartDate" />
+              <Mapping SourceColumn="EndDate" DataSetColumn="EndDate" />
+              <Mapping SourceColumn="DayNumber" DataSetColumn="DayNumber" />
+              <Mapping SourceColumn="ItineraryDesc" DataSetColumn="ItineraryDesc" />
+              <Mapping SourceColumn="Activity" DataSetColumn="Activity" />
+              <Mapping SourceColumn="HotelName" DataSetColumn="HotelName" />
+              <Mapping SourceColumn="RoomType" DataSetColumn="RoomType" />
+              <Mapping SourceColumn="CheckInDate" DataSetColumn="CheckInDate" />
+              <Mapping SourceColumn="CheckOutDate" DataSetColumn="CheckOutDate" />
+              <Mapping SourceColumn="Inclusion" DataSetColumn="Inclusion" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmergingDestinationsTableAdapter" GeneratorDataComponentClassName="EmergingDestinationsTableAdapter" Name="EmergingDestinations" UserDataComponentName="EmergingDestinationsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.EmergingDestinations" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Destination, Previous, Recent, Growth FROM dbo.EmergingDestinations</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Destination" DataSetColumn="Destination" />
+              <Mapping SourceColumn="Previous" DataSetColumn="Previous" />
+              <Mapping SourceColumn="Recent" DataSetColumn="Recent" />
+              <Mapping SourceColumn="Growth" DataSetColumn="Growth" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MonthlyTrendsTableAdapter" GeneratorDataComponentClassName="MonthlyTrendsTableAdapter" Name="MonthlyTrends" UserDataComponentName="MonthlyTrendsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.MonthlyTrends" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MonthName, MonthlyBookings FROM dbo.MonthlyTrends</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MonthName" DataSetColumn="MonthName" />
+              <Mapping SourceColumn="MonthlyBookings" DataSetColumn="MonthlyBookings" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MostBookedDestinationsTableAdapter" GeneratorDataComponentClassName="MostBookedDestinationsTableAdapter" Name="MostBookedDestinations" UserDataComponentName="MostBookedDestinationsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.MostBookedDestinations" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Destination, TotalBookings FROM dbo.MostBookedDestinations</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Destination" DataSetColumn="Destination" />
+              <Mapping SourceColumn="TotalBookings" DataSetColumn="TotalBookings" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TravelerSatisfactionTableAdapter" GeneratorDataComponentClassName="TravelerSatisfactionTableAdapter" Name="TravelerSatisfaction" UserDataComponentName="TravelerSatisfactionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.TravelerSatisfaction" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Destination, AverageRating FROM dbo.TravelerSatisfaction</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Destination" DataSetColumn="Destination" />
+              <Mapping SourceColumn="AverageRating" DataSetColumn="AverageRating" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_AverageBookingValueTableAdapter" GeneratorDataComponentClassName="vw_AverageBookingValueTableAdapter" Name="vw_AverageBookingValue" UserDataComponentName="vw_AverageBookingValueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.vw_AverageBookingValue" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AverageBookingValue FROM dbo.vw_AverageBookingValue</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AverageBookingValue" DataSetColumn="AverageBookingValue" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_CancellationRateTableAdapter" GeneratorDataComponentClassName="vw_CancellationRateTableAdapter" Name="vw_CancellationRate" UserDataComponentName="vw_CancellationRateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.vw_CancellationRate" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CancellationRate FROM dbo.vw_CancellationRate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CancellationRate" DataSetColumn="CancellationRate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_PeakBookingPeriodsTableAdapter" GeneratorDataComponentClassName="vw_PeakBookingPeriodsTableAdapter" Name="vw_PeakBookingPeriods" UserDataComponentName="vw_PeakBookingPeriodsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.vw_PeakBookingPeriods" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Month, Bookings FROM dbo.vw_PeakBookingPeriods</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Month" DataSetColumn="Month" />
+              <Mapping SourceColumn="Bookings" DataSetColumn="Bookings" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_RevenueByTripCategoryTableAdapter" GeneratorDataComponentClassName="vw_RevenueByTripCategoryTableAdapter" Name="vw_RevenueByTripCategory" UserDataComponentName="vw_RevenueByTripCategoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.vw_RevenueByTripCategory" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Category, Revenue FROM dbo.vw_RevenueByTripCategory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="Revenue" DataSetColumn="Revenue" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_TotalBookingsTableAdapter" GeneratorDataComponentClassName="vw_TotalBookingsTableAdapter" Name="vw_TotalBookings" UserDataComponentName="vw_TotalBookingsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.vw_TotalBookings" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TotalBookings FROM dbo.vw_TotalBookings</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TotalBookings" DataSetColumn="TotalBookings" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TravelEaseDataSet13" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="TravelEaseDataSet13" msprop:Generator_DataSetName="TravelEaseDataSet13">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DigitalTravelPass" msprop:Generator_RowEvHandlerName="DigitalTravelPassRowChangeEventHandler" msprop:Generator_RowDeletedName="DigitalTravelPassRowDeleted" msprop:Generator_RowDeletingName="DigitalTravelPassRowDeleting" msprop:Generator_RowEvArgName="DigitalTravelPassRowChangeEvent" msprop:Generator_TablePropName="DigitalTravelPass" msprop:Generator_RowChangedName="DigitalTravelPassRowChanged" msprop:Generator_RowChangingName="DigitalTravelPassRowChanging" msprop:Generator_TableClassName="DigitalTravelPassDataTable" msprop:Generator_RowClassName="DigitalTravelPassRow" msprop:Generator_TableVarName="tableDigitalTravelPass" msprop:Generator_UserTableName="DigitalTravelPass">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TravelerID" msprop:Generator_ColumnPropNameInRow="TravelerID" msprop:Generator_ColumnPropNameInTable="TravelerIDColumn" msprop:Generator_ColumnVarNameInTable="columnTravelerID" msprop:Generator_UserColumnName="TravelerID" type="xs:int" />
+              <xs:element name="BookingID" msprop:Generator_ColumnPropNameInRow="BookingID" msprop:Generator_ColumnPropNameInTable="BookingIDColumn" msprop:Generator_ColumnVarNameInTable="columnBookingID" msprop:Generator_UserColumnName="BookingID" type="xs:int" />
+              <xs:element name="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_UserColumnName="Title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Destination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_UserColumnName="Destination">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_UserColumnName="StartDate" type="xs:dateTime" />
+              <xs:element name="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_UserColumnName="EndDate" type="xs:dateTime" />
+              <xs:element name="DayNumber" msprop:Generator_ColumnPropNameInRow="DayNumber" msprop:Generator_ColumnPropNameInTable="DayNumberColumn" msprop:Generator_ColumnVarNameInTable="columnDayNumber" msprop:Generator_UserColumnName="DayNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="ItineraryDesc" msprop:Generator_ColumnPropNameInRow="ItineraryDesc" msprop:Generator_ColumnPropNameInTable="ItineraryDescColumn" msprop:Generator_ColumnVarNameInTable="columnItineraryDesc" msprop:Generator_UserColumnName="ItineraryDesc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Activity" msprop:Generator_ColumnPropNameInRow="Activity" msprop:Generator_ColumnPropNameInTable="ActivityColumn" msprop:Generator_ColumnVarNameInTable="columnActivity" msprop:Generator_UserColumnName="Activity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HotelName" msprop:Generator_ColumnPropNameInRow="HotelName" msprop:Generator_ColumnPropNameInTable="HotelNameColumn" msprop:Generator_ColumnVarNameInTable="columnHotelName" msprop:Generator_UserColumnName="HotelName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoomType" msprop:Generator_ColumnPropNameInRow="RoomType" msprop:Generator_ColumnPropNameInTable="RoomTypeColumn" msprop:Generator_ColumnVarNameInTable="columnRoomType" msprop:Generator_UserColumnName="RoomType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CheckInDate" msprop:Generator_ColumnPropNameInRow="CheckInDate" msprop:Generator_ColumnPropNameInTable="CheckInDateColumn" msprop:Generator_ColumnVarNameInTable="columnCheckInDate" msprop:Generator_UserColumnName="CheckInDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CheckOutDate" msprop:Generator_ColumnPropNameInRow="CheckOutDate" msprop:Generator_ColumnPropNameInTable="CheckOutDateColumn" msprop:Generator_ColumnVarNameInTable="columnCheckOutDate" msprop:Generator_UserColumnName="CheckOutDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Inclusion" msprop:Generator_ColumnPropNameInRow="Inclusion" msprop:Generator_ColumnPropNameInTable="InclusionColumn" msprop:Generator_ColumnVarNameInTable="columnInclusion" msprop:Generator_UserColumnName="Inclusion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmergingDestinations" msprop:Generator_RowEvHandlerName="EmergingDestinationsRowChangeEventHandler" msprop:Generator_RowDeletedName="EmergingDestinationsRowDeleted" msprop:Generator_RowDeletingName="EmergingDestinationsRowDeleting" msprop:Generator_RowEvArgName="EmergingDestinationsRowChangeEvent" msprop:Generator_TablePropName="EmergingDestinations" msprop:Generator_RowChangedName="EmergingDestinationsRowChanged" msprop:Generator_RowChangingName="EmergingDestinationsRowChanging" msprop:Generator_TableClassName="EmergingDestinationsDataTable" msprop:Generator_RowClassName="EmergingDestinationsRow" msprop:Generator_TableVarName="tableEmergingDestinations" msprop:Generator_UserTableName="EmergingDestinations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Destination" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_UserColumnName="Destination" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Previous" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Previous" msprop:Generator_ColumnPropNameInTable="PreviousColumn" msprop:Generator_ColumnVarNameInTable="columnPrevious" msprop:Generator_UserColumnName="Previous" type="xs:int" minOccurs="0" />
+              <xs:element name="Recent" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Recent" msprop:Generator_ColumnPropNameInTable="RecentColumn" msprop:Generator_ColumnVarNameInTable="columnRecent" msprop:Generator_UserColumnName="Recent" type="xs:int" minOccurs="0" />
+              <xs:element name="Growth" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Growth" msprop:Generator_ColumnPropNameInTable="GrowthColumn" msprop:Generator_ColumnVarNameInTable="columnGrowth" msprop:Generator_UserColumnName="Growth" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MonthlyTrends" msprop:Generator_RowEvHandlerName="MonthlyTrendsRowChangeEventHandler" msprop:Generator_RowDeletedName="MonthlyTrendsRowDeleted" msprop:Generator_RowDeletingName="MonthlyTrendsRowDeleting" msprop:Generator_RowEvArgName="MonthlyTrendsRowChangeEvent" msprop:Generator_TablePropName="MonthlyTrends" msprop:Generator_RowChangedName="MonthlyTrendsRowChanged" msprop:Generator_RowChangingName="MonthlyTrendsRowChanging" msprop:Generator_TableClassName="MonthlyTrendsDataTable" msprop:Generator_RowClassName="MonthlyTrendsRow" msprop:Generator_TableVarName="tableMonthlyTrends" msprop:Generator_UserTableName="MonthlyTrends">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MonthName" msprop:Generator_ColumnPropNameInRow="MonthName" msprop:Generator_ColumnPropNameInTable="MonthNameColumn" msprop:Generator_ColumnVarNameInTable="columnMonthName" msprop:Generator_UserColumnName="MonthName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MonthlyBookings" msprop:Generator_ColumnPropNameInRow="MonthlyBookings" msprop:Generator_ColumnPropNameInTable="MonthlyBookingsColumn" msprop:Generator_ColumnVarNameInTable="columnMonthlyBookings" msprop:Generator_UserColumnName="MonthlyBookings" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MostBookedDestinations" msprop:Generator_RowEvHandlerName="MostBookedDestinationsRowChangeEventHandler" msprop:Generator_RowDeletedName="MostBookedDestinationsRowDeleted" msprop:Generator_RowDeletingName="MostBookedDestinationsRowDeleting" msprop:Generator_RowEvArgName="MostBookedDestinationsRowChangeEvent" msprop:Generator_TablePropName="MostBookedDestinations" msprop:Generator_RowChangedName="MostBookedDestinationsRowChanged" msprop:Generator_RowChangingName="MostBookedDestinationsRowChanging" msprop:Generator_TableClassName="MostBookedDestinationsDataTable" msprop:Generator_RowClassName="MostBookedDestinationsRow" msprop:Generator_TableVarName="tableMostBookedDestinations" msprop:Generator_UserTableName="MostBookedDestinations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Destination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_UserColumnName="Destination">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalBookings" msprop:Generator_ColumnPropNameInRow="TotalBookings" msprop:Generator_ColumnPropNameInTable="TotalBookingsColumn" msprop:Generator_ColumnVarNameInTable="columnTotalBookings" msprop:Generator_UserColumnName="TotalBookings" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TravelerSatisfaction" msprop:Generator_RowEvHandlerName="TravelerSatisfactionRowChangeEventHandler" msprop:Generator_RowDeletedName="TravelerSatisfactionRowDeleted" msprop:Generator_RowDeletingName="TravelerSatisfactionRowDeleting" msprop:Generator_RowEvArgName="TravelerSatisfactionRowChangeEvent" msprop:Generator_TablePropName="TravelerSatisfaction" msprop:Generator_RowChangedName="TravelerSatisfactionRowChanged" msprop:Generator_RowChangingName="TravelerSatisfactionRowChanging" msprop:Generator_TableClassName="TravelerSatisfactionDataTable" msprop:Generator_RowClassName="TravelerSatisfactionRow" msprop:Generator_TableVarName="tableTravelerSatisfaction" msprop:Generator_UserTableName="TravelerSatisfaction">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Destination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_UserColumnName="Destination">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AverageRating" msprop:Generator_ColumnPropNameInRow="AverageRating" msprop:Generator_ColumnPropNameInTable="AverageRatingColumn" msprop:Generator_ColumnVarNameInTable="columnAverageRating" msprop:Generator_UserColumnName="AverageRating" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_AverageBookingValue" msprop:Generator_RowEvHandlerName="vw_AverageBookingValueRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_AverageBookingValueRowDeleted" msprop:Generator_RowDeletingName="vw_AverageBookingValueRowDeleting" msprop:Generator_RowEvArgName="vw_AverageBookingValueRowChangeEvent" msprop:Generator_TablePropName="vw_AverageBookingValue" msprop:Generator_RowChangedName="vw_AverageBookingValueRowChanged" msprop:Generator_RowChangingName="vw_AverageBookingValueRowChanging" msprop:Generator_TableClassName="vw_AverageBookingValueDataTable" msprop:Generator_RowClassName="vw_AverageBookingValueRow" msprop:Generator_TableVarName="tablevw_AverageBookingValue" msprop:Generator_UserTableName="vw_AverageBookingValue">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AverageBookingValue" msprop:Generator_ColumnPropNameInRow="AverageBookingValue" msprop:Generator_ColumnPropNameInTable="AverageBookingValueColumn" msprop:Generator_ColumnVarNameInTable="columnAverageBookingValue" msprop:Generator_UserColumnName="AverageBookingValue" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_CancellationRate" msprop:Generator_RowEvHandlerName="vw_CancellationRateRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_CancellationRateRowDeleted" msprop:Generator_RowDeletingName="vw_CancellationRateRowDeleting" msprop:Generator_RowEvArgName="vw_CancellationRateRowChangeEvent" msprop:Generator_TablePropName="vw_CancellationRate" msprop:Generator_RowChangedName="vw_CancellationRateRowChanged" msprop:Generator_RowChangingName="vw_CancellationRateRowChanging" msprop:Generator_TableClassName="vw_CancellationRateDataTable" msprop:Generator_RowClassName="vw_CancellationRateRow" msprop:Generator_TableVarName="tablevw_CancellationRate" msprop:Generator_UserTableName="vw_CancellationRate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CancellationRate" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="CancellationRate" msprop:Generator_ColumnPropNameInTable="CancellationRateColumn" msprop:Generator_ColumnVarNameInTable="columnCancellationRate" msprop:Generator_UserColumnName="CancellationRate" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_PeakBookingPeriods" msprop:Generator_RowEvHandlerName="vw_PeakBookingPeriodsRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_PeakBookingPeriodsRowDeleted" msprop:Generator_RowDeletingName="vw_PeakBookingPeriodsRowDeleting" msprop:Generator_RowEvArgName="vw_PeakBookingPeriodsRowChangeEvent" msprop:Generator_TablePropName="vw_PeakBookingPeriods" msprop:Generator_RowChangedName="vw_PeakBookingPeriodsRowChanged" msprop:Generator_RowChangingName="vw_PeakBookingPeriodsRowChanging" msprop:Generator_TableClassName="vw_PeakBookingPeriodsDataTable" msprop:Generator_RowClassName="vw_PeakBookingPeriodsRow" msprop:Generator_TableVarName="tablevw_PeakBookingPeriods" msprop:Generator_UserTableName="vw_PeakBookingPeriods">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Month" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnPropNameInTable="MonthColumn" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_UserColumnName="Month" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bookings" msprop:Generator_ColumnPropNameInRow="Bookings" msprop:Generator_ColumnPropNameInTable="BookingsColumn" msprop:Generator_ColumnVarNameInTable="columnBookings" msprop:Generator_UserColumnName="Bookings" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_RevenueByTripCategory" msprop:Generator_RowEvHandlerName="vw_RevenueByTripCategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_RevenueByTripCategoryRowDeleted" msprop:Generator_RowDeletingName="vw_RevenueByTripCategoryRowDeleting" msprop:Generator_RowEvArgName="vw_RevenueByTripCategoryRowChangeEvent" msprop:Generator_TablePropName="vw_RevenueByTripCategory" msprop:Generator_RowChangedName="vw_RevenueByTripCategoryRowChanged" msprop:Generator_RowChangingName="vw_RevenueByTripCategoryRowChanging" msprop:Generator_TableClassName="vw_RevenueByTripCategoryDataTable" msprop:Generator_RowClassName="vw_RevenueByTripCategoryRow" msprop:Generator_TableVarName="tablevw_RevenueByTripCategory" msprop:Generator_UserTableName="vw_RevenueByTripCategory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_UserColumnName="Category">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Revenue" msprop:Generator_ColumnPropNameInRow="Revenue" msprop:Generator_ColumnPropNameInTable="RevenueColumn" msprop:Generator_ColumnVarNameInTable="columnRevenue" msprop:Generator_UserColumnName="Revenue" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_TotalBookings" msprop:Generator_RowEvHandlerName="vw_TotalBookingsRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_TotalBookingsRowDeleted" msprop:Generator_RowDeletingName="vw_TotalBookingsRowDeleting" msprop:Generator_RowEvArgName="vw_TotalBookingsRowChangeEvent" msprop:Generator_TablePropName="vw_TotalBookings" msprop:Generator_RowChangedName="vw_TotalBookingsRowChanged" msprop:Generator_RowChangingName="vw_TotalBookingsRowChanging" msprop:Generator_TableClassName="vw_TotalBookingsDataTable" msprop:Generator_RowClassName="vw_TotalBookingsRow" msprop:Generator_TableVarName="tablevw_TotalBookings" msprop:Generator_UserTableName="vw_TotalBookings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalBookings" msprop:Generator_ColumnPropNameInRow="TotalBookings" msprop:Generator_ColumnPropNameInTable="TotalBookingsColumn" msprop:Generator_ColumnVarNameInTable="columnTotalBookings" msprop:Generator_UserColumnName="TotalBookings" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

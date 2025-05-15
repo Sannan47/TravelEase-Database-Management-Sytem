@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TravelEaseDataSet10" targetNamespace="http://tempuri.org/TravelEaseDataSet10.xsd" xmlns:mstns="http://tempuri.org/TravelEaseDataSet10.xsd" xmlns="http://tempuri.org/TravelEaseDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TravelEaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TravelEaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.TravelEaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_CancellationRateTableAdapter" GeneratorDataComponentClassName="vw_CancellationRateTableAdapter" Name="vw_CancellationRate" UserDataComponentName="vw_CancellationRateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.vw_CancellationRate" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CancellationRate FROM dbo.vw_CancellationRate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CancellationRate" DataSetColumn="CancellationRate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TravelEaseDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="TravelEaseDataSet10" msprop:Generator_DataSetName="TravelEaseDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_CancellationRate" msprop:Generator_RowEvHandlerName="vw_CancellationRateRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_CancellationRateRowDeleted" msprop:Generator_RowDeletingName="vw_CancellationRateRowDeleting" msprop:Generator_RowEvArgName="vw_CancellationRateRowChangeEvent" msprop:Generator_TablePropName="vw_CancellationRate" msprop:Generator_RowChangedName="vw_CancellationRateRowChanged" msprop:Generator_RowChangingName="vw_CancellationRateRowChanging" msprop:Generator_TableClassName="vw_CancellationRateDataTable" msprop:Generator_RowClassName="vw_CancellationRateRow" msprop:Generator_TableVarName="tablevw_CancellationRate" msprop:Generator_UserTableName="vw_CancellationRate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CancellationRate" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="CancellationRate" msprop:Generator_ColumnPropNameInTable="CancellationRateColumn" msprop:Generator_ColumnVarNameInTable="columnCancellationRate" msprop:Generator_UserColumnName="CancellationRate" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

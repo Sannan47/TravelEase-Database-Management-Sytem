@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Report8data" targetNamespace="http://tempuri.org/Report8data.xsd" xmlns:mstns="http://tempuri.org/Report8data.xsd" xmlns="http://tempuri.org/Report8data.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TravelEaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TravelEaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.TravelEaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_ChargebackRateTableAdapter" GeneratorDataComponentClassName="vw_ChargebackRateTableAdapter" Name="vw_ChargebackRate" UserDataComponentName="vw_ChargebackRateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.vw_ChargebackRate" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ChargebackRate FROM dbo.vw_ChargebackRate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ChargebackRate" DataSetColumn="ChargebackRate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_PaymentSuccessFailureRateTableAdapter" GeneratorDataComponentClassName="vw_PaymentSuccessFailureRateTableAdapter" Name="vw_PaymentSuccessFailureRate" UserDataComponentName="vw_PaymentSuccessFailureRateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TravelEaseConnectionString (Settings)" DbObjectName="TravelEase.dbo.vw_PaymentSuccessFailureRate" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Status, Count, Percentage FROM dbo.vw_PaymentSuccessFailureRate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Count" DataSetColumn="Count" />
+              <Mapping SourceColumn="Percentage" DataSetColumn="Percentage" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Report8data" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Report8data" msprop:Generator_DataSetName="Report8data">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_ChargebackRate" msprop:Generator_RowEvHandlerName="vw_ChargebackRateRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_ChargebackRateRowDeleted" msprop:Generator_RowDeletingName="vw_ChargebackRateRowDeleting" msprop:Generator_RowEvArgName="vw_ChargebackRateRowChangeEvent" msprop:Generator_TablePropName="vw_ChargebackRate" msprop:Generator_RowChangedName="vw_ChargebackRateRowChanged" msprop:Generator_RowChangingName="vw_ChargebackRateRowChanging" msprop:Generator_TableClassName="vw_ChargebackRateDataTable" msprop:Generator_RowClassName="vw_ChargebackRateRow" msprop:Generator_TableVarName="tablevw_ChargebackRate" msprop:Generator_UserTableName="vw_ChargebackRate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ChargebackRate" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="ChargebackRate" msprop:Generator_ColumnPropNameInTable="ChargebackRateColumn" msprop:Generator_ColumnVarNameInTable="columnChargebackRate" msprop:Generator_UserColumnName="ChargebackRate" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_PaymentSuccessFailureRate" msprop:Generator_RowEvHandlerName="vw_PaymentSuccessFailureRateRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_PaymentSuccessFailureRateRowDeleted" msprop:Generator_RowDeletingName="vw_PaymentSuccessFailureRateRowDeleting" msprop:Generator_RowEvArgName="vw_PaymentSuccessFailureRateRowChangeEvent" msprop:Generator_TablePropName="vw_PaymentSuccessFailureRate" msprop:Generator_RowChangedName="vw_PaymentSuccessFailureRateRowChanged" msprop:Generator_RowChangingName="vw_PaymentSuccessFailureRateRowChanging" msprop:Generator_TableClassName="vw_PaymentSuccessFailureRateDataTable" msprop:Generator_RowClassName="vw_PaymentSuccessFailureRateRow" msprop:Generator_TableVarName="tablevw_PaymentSuccessFailureRate" msprop:Generator_UserTableName="vw_PaymentSuccessFailureRate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_UserColumnName="Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Count" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnPropNameInTable="CountColumn" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_UserColumnName="Count" type="xs:int" minOccurs="0" />
+              <xs:element name="Percentage" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Percentage" msprop:Generator_ColumnPropNameInTable="PercentageColumn" msprop:Generator_ColumnVarNameInTable="columnPercentage" msprop:Generator_UserColumnName="Percentage" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
